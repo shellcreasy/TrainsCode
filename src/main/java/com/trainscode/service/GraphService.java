@@ -1,8 +1,14 @@
 package com.trainscode.service;
 
-import com.trainscode.entity.Graph;
-import com.trainscode.entity.Node;
+import java.util.Map;
 
+/**
+ * @author
+ */
 public interface GraphService {
-    int getPathLengthByNodes(Graph graph, Node sourceNode, Node destNode,int pathLenght);
+    boolean buildGraph(String graphString);
+    int getDistanceByRoute(String routes);
+    int getNumberOfTripsWithStopsLimit(String source,String destination,int stops);
+    int getLengthOfShortestRoute(String source,String destination);
+    int getNumberOfDifferentRouteWithDistanceLimit(String source,String destination);
 }

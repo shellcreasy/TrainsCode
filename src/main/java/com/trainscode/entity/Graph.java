@@ -1,6 +1,7 @@
 package com.trainscode.entity;
 
 import lombok.Data;
+
 import java.util.List;
 
 /**
@@ -9,7 +10,8 @@ import java.util.List;
 @Data
 public class Graph {
     private List<Edge> edges;
-    public Graph(List<Edge> edges){
+
+    public Graph(List<Edge> edges) {
         this.edges = edges;
     }
 }
